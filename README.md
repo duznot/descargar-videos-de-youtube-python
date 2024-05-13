@@ -50,3 +50,27 @@ Puedes encontrar el archivo ejecutable en la sección de "Releases" en este repo
 
 ¡Espero que esta explicación te ayude a comprender el funcionamiento del código! Si tienes alguna pregunta adicional o necesitas más detalles sobre alguna parte específica, no dudes en preguntar.
 
+
+# Automatización de instalación y creación de ejecutable con PyInstaller
+
+Este archivo de lote (.bat) es un script de Windows que automatiza la instalación de PyInstaller y la creación de un ejecutable de un script de Python llamado `youtube_downloader.py`. A continuación se presenta una descripción línea por línea del script:
+
+- `@echo off`: Desactiva la visualización de los comandos del archivo por la consola de Windows. Es común usarlo al inicio de un script de lote para hacer que el script sea más limpio.
+
+- `echo Instalando PyInstaller...`: Imprime en la consola el mensaje "Instalando PyInstaller...".
+
+- `pip install pyinstaller`: Utiliza pip (el administrador de paquetes de Python) para instalar PyInstaller en el sistema.
+
+- `echo Instalación completada.`: Imprime en la consola el mensaje "Instalación completada." para indicar que la instalación ha finalizado.
+
+- `echo.`: Imprime una línea en blanco en la consola para mejorar la legibilidad.
+
+- `echo Ejecutando PyInstaller...`: Imprime en la consola el mensaje "Ejecutando PyInstaller..." para indicar que se está ejecutando el proceso de creación del ejecutable.
+
+- `pyinstaller --onefile --noconsole --windowed --icon=ic.ico youtube_downloader.py`: Llama a PyInstaller con una serie de opciones para generar un ejecutable único (--onefile) sin una ventana de consola visible (--noconsole y --windowed) y con un ícono personalizado (--icon=ic.ico). El script de Python que se está convirtiendo en un ejecutable es `youtube_downloader.py`.
+
+- `echo PyInstaller ha terminado.`: Imprime en la consola el mensaje "PyInstaller ha terminado." para indicar que el proceso de creación del ejecutable ha finalizado.
+
+- `pause`: Pausa la ejecución del script hasta que el usuario presione una tecla. Esto es útil para que el usuario pueda leer los mensajes de la consola antes de que esta se cierre automáticamente.
+
+

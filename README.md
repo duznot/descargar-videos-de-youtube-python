@@ -39,5 +39,17 @@ pip install pytube
 - Se crean varios widgets como etiquetas, cuadros de entrada, botones y menús desplegables para la interacción del usuario.
 - El bucle principal (`root.mainloop()`) mantiene la ventana abierta y receptiva a la interacción del usuario.
 
+# Descargador de YouTube
+
+Este es un programa de descarga de videos de YouTube con una interfaz gráfica simple construida en Python utilizando Tkinter.
+
+## Ejecución rápida
+
+También proporciono un archivo ejecutable (.exe) que contiene el programa. Este archivo es útil si no deseas instalar las librerías manualmente y prefieres una ejecución rápida.
+
+Puedes encontrar el archivo ejecutable en la sección de "Releases" en este repositorio.
+
+¡Disfruta del descargador de YouTube!
+
 ¡Espero que esta explicación te ayude a comprender el funcionamiento del código! Si tienes alguna pregunta adicional o necesitas más detalles sobre alguna parte específica, no dudes en preguntar.
 
